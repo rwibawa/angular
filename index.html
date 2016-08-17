@@ -13,11 +13,13 @@
 	<h1>Store</h1>
 	<p>{{"hello" + " you"}}</p>
 	
-	<div ng-hide="store.product.soldOut">
-		<h2> {{store.product.name}} </h2>
-		<h3> ${{store.product.price}} </h3>
-		<p> {{store.product.description}} </p>
-		<button ng-show="store.product.canPurchase">Add to Cart</button>
+	<div ng-repeat="product in store.products">
+		<div ng-hide="product.soldOut">
+			<h2> {{product.name}} </h2>
+			<h3> ${{product.price}} </h3>
+			<p> {{product.description}} </p>
+			<button ng-show="product.canPurchase">Add to Cart</button>
+		</div>
 	</div>
 </body>
 </html>
