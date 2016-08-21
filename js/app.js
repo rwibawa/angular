@@ -5,6 +5,14 @@
 		this.products = gems;
 	});
 	
+	app.controller('PanelController', function(){
+		this.tab = 1;
+		
+		this.selectTab = function(setTab) {
+			this.tab = setTab;
+		}
+	});
+	
 //	var gems = [
 //		{
 //			name: "Dodecahedron",
