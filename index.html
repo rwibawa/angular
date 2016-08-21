@@ -12,7 +12,7 @@
 <body ng-controller="StoreController as store">
 	
 	<h1>Store</h1>
-	<div ng-repeat="product in store.products">
+	<!-- <div ng-repeat="product in store.products">
 		<div ng-hide="product.soldOut">
 			<h2> {{product.name}} </h2>
 			<h3>{{product.price | currency}}</h3>
@@ -21,6 +21,29 @@
 		</div>
 	</div>
 	
+	<br> -->
+	
+	<section ng-init="tab = 1">
+		<ul class="nav nav-pills">
+			<li><a href ng-click="tab = 1">Description</a></li>
+			<li><a href ng-click="tab = 2">Specifications</a></li>
+			<li><a href ng-click="tab = 3">Reviews</a></li>
+		</ul>
+		<!-- {{tab}} -->
+	</section>
+	
+	<div class="panel" ng-show="tab === 1">
+		<h4>Description</h4>
+		<p>{{product.description}}</p>
+	</div>
+	<div class="panel" ng-show="tab === 2">
+		<h4>Specifications</h4>
+		<blockquote>None yet</blockquote>
+	</div>
+	<div class="panel" ng-show="tab === 3">
+		<h4>Reviews</h4>
+		<blockquote>None yet</blockquote>
+	</div>
 	
 </body>
 </html>
