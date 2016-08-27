@@ -80,10 +80,10 @@
             <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate>
 
               <!--  Live Preview -->
-              <blockquote >
-                <strong>{{reviewCtrl.review.stars}} Stars</strong>
-                {{reviewCtrl.review.body}}
-                <cite class="clearfix">—{{reviewCtrl.review.author}}</cite>
+              <blockquote>
+                  <strong>{{review.stars}} Stars</strong>
+                  {{review.body}}
+                  <cite class="clearfix">—{{review.author}} on {{review.createdOn | date }}</cite>
               </blockquote>
 
               <!--  Review Form -->
