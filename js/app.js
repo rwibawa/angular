@@ -17,6 +17,42 @@
 		}
 	});
 	
+	app.controller('TabController', function(){
+		this.tab = 1;
+		
+		this.setTab = function(newValue) {
+			this.tab = newValue;
+		}
+		
+		this.isSet = function(checkTab) {
+			return this.tab === checkTab;
+		}
+	});
+	
+	app.controller('GalleryController', function(){
+		this.current = 1;
+		
+		this.setCurrent = function(newValue) {
+			if (newValue) {
+				this.current = newValue;
+			} else {
+				this.current = 0;
+			}
+		}
+		
+		this.isSet = function(checkTab) {
+			return this.tab === checkTab;
+		}
+	});
+	
+	app.controller('ReviewController', function(){
+	    this.review = {};
+	    this.addReview = function(product) {
+	      product.reviews.push(this.review);
+	      this.review = {};
+	    };
+	  });
+	
 //	var gems = [
 //		{
 //			name: "Dodecahedron",
