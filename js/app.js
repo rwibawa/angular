@@ -61,6 +61,13 @@
 		};
 	});
 	
+	app.directive('productSpecs', function(){
+		return {
+			retrict: 'A',
+			templateUrl: "includes/product-specs.html"
+		};
+	});
+	
 //	var gems = [
 //		{
 //			name: "Dodecahedron",
