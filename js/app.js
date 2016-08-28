@@ -29,6 +29,26 @@
 		}
 	});
 	
+	// Refactor TabController into a custom directive
+	app.directive('productTabs', function(){
+		return {
+			restrict: 'E',
+			templateUrl: "includes/product-tabs.html",
+			controller: function(){
+				this.tab = 1;
+				
+				this.setTab = function(newValue) {
+					this.tab = newValue;
+				}
+				
+				this.isSet = function(checkTab) {
+					return this.tab === checkTab;
+				}
+			},
+			controllerAs: 'tab'
+		};
+	});
+	
 	app.controller('GalleryController', function(){
 		this.current = 1;
 		
