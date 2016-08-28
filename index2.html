@@ -54,7 +54,8 @@
           <h4>Specs</h4>
           <blockquote>Shine: {{product.shine}}</blockquote>
         </div>
-        <div ng-show="tab.isSet(3)" ng-include="'includes/product-reviews.html'">
+        <div ng-show="tab.isSet(3)">
+        	<product-descriptions></product-descriptions>
         </div>
       </section>
     </div>
