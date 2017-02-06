@@ -2,12 +2,12 @@
 angularJS exercise
 
 > Requirements:
-> * NodeJS
-> * NPM
+> * [NodeJS & NPM](https://docs.npmjs.com/getting-started/installing-node)
+> * [git](https://git-scm.com)
 
 ## 1. Setup
 ```shell
-  $  mkdir express_02
+  $  git clone https://github.com/rwibawa/angular.git
   $  cd angularJS_02
   $  npm install http-server -g
   $  http-server -p 9003
