@@ -15,4 +15,4 @@ angularJS exercise
 Then open:
 * [website1](http://localhost:9003/index.html): http://localhost:9003/index.html
 * [website2](http://localhost:9003/index2.html): http://localhost:9003/index2.html
-* [website3](http://localhost:9003/index3.html): http://localhost:9003/index.html
+* [website3](http://localhost:9003/index3.html): http://localhost:9003/index3.html
