@@ -8,7 +8,7 @@ angularJS exercise
 ## 1. Setup
 ```shell
   $  git clone https://github.com/rwibawa/angular.git
-  $  cd angularJS_02
+  $  cd angular
   $  npm install http-server -g
   $  http-server -p 9003
 ```
