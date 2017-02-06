@@ -13,6 +13,6 @@ angularJS exercise
   $  http-server -p 9003
 ```
 Then open:
-* [the website](http://localhost:9003/index.html)
-* [the website](http://localhost:9003/index2.html)
-* [the website](http://localhost:9003/index3.html)
+* [website1](http://localhost:9003/index.html): http://localhost:9003/index.html
+* [website2](http://localhost:9003/index2.html): http://localhost:9003/index2.html
+* [website3](http://localhost:9003/index3.html): http://localhost:9003/index.html
