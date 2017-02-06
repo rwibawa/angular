@@ -1,10 +1,11 @@
 {
-  "name": "angularJS_02",
+  "name": "angularJS",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -p 9003"
   },
   "keywords": [],
   "author": "rwibawa <ryan.wibawa@gmail.com>",
@@ -12,5 +13,10 @@
   "dependencies": {
     "angular": "^1.5.8",
     "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "karma": "^1.2.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2"
   }
 }
